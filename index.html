@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale= 1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel = "stylesheet" href = "styles.css">
+    <title> Shahob Kazemi | Portfolio </title>
+  </head>
+
+  <body>
+
+    <nav class = "nav-bar">
+      <input type = "checkbox" id = "check">
+      <label for = "check" class = "checkbtn">
+        <i class = "fa fa-bars"></i>
+      </label>
+      <!---<label class = "logo">Example</label>--->
+      <ul>
+        <li><a class = "active" href = "#home">Home</a></li>
+        <li><a href = "#projects">Projects</a></li>
+        <li><a href = "images/resume.pdf" download>Resume</a></li>
+      </ul>
+    </nav>
+
+    <nav class="social">
+        <br>
+        <br>
+        <br>
+        <br>
+        <ul>
+          <li><a href ="mailto:shahob.kazemi@ryerson.ca">Email<i class = "fa fa-envelope-square"></i></a></li>
+          <li><a href ="https://github.com/shahobk">Github<i class = "fa fa-github"></i></a></li>
+          <li><a href ="https://www.linkedin.com/in/shahob-kazemi/">LinkedIn<i class = "fa fa-linkedin"></i></a></li>
+          <li><a href ="https://www.instagram.com/shahobk/">Instagram<i class = "fa fa-instagram"></i></a></li>
+        </ul>
+
+    </nav>
+    <header class = "main-header" id = "home">
+      <h1> Shahob Kazemi</h1>
+      <img src = "images/user1.jpg" alt = "">
+      <h2>I am <span class = "ogomy"></span></h2>
+      <a href = "images/resume.pdf" download><button class="button"> <i class = "fa fa-download"></i>Resume</button></a>
+      <!--<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, nemo!</p> -->
+    </header>
+  
+    <main class = "container" id = "projects">
+      <h2 data-aos= "fade">Projects</h2>
+      <section class="card" data-aos= "fade-right">
+        <img src = "images/filekeep.jpg" alt = "">
+        <div>
+          <h3>FileKeep, a global file directory</h3>
+          <p> A directory to upload, download, and store your important documents with the ease of access.
+            Programmed using ReactJS for the first time at NewHack2020, along with a google storage and calendar API.
+          </p>
+            <a href = "https://github.com/shahobk/FileKeep" class = "btn"><i class = "fa fa-github fa-2x"></i></a>
+            <!--<a href = "#" class = "btn">Buy Now</a>-->
+        </div>
+      </section>
+
+      <section class="card" data-aos= "fade-left"> 
+        <img src = "images/bank.JPG" alt = "">
+        <div>
+          <h3>Bank Application</h3>
+          <p> Designed an interactive bank application which allowed users to create account login and allow them to deposit and withdraw money from their accounts. 
+            Programmed using Java and JavaFX.
+            Designed with UML diagrams and .FXML files. </p>
+            <a href = "https://github.com/shahobk/BankApplication" class = "btn2"><i class = "fa fa-github fa-2x"></i></a>
+        </div>
+      </section>
+
+      <section class="card" data-aos= "fade-right">
+        <img src = "images/hangman.JPG" alt = "">
+        <div>
+          <h3>Hangman Arcade</h3>
+          <p> Created an advanced version of the popular game Hangman during highschool, 
+            which included 7 different modes in which users can play. Programmed and designed using Java and JavaFX.</p>
+            <a href = "https://github.com/shahobk/HangmanArcade" class = "btn"><i class = "fa fa-github fa-2x"></i></a>
+        </div>
+      </section>
+
+      <section class="card" data-aos= "fade-left">
+        <img src = "images/website.JPG" alt = "">
+        <div>
+          <h3>Portfolio Website V1.0</h3>
+          <p> My first site after learning web development. Challenged myself to create a portfolio website using HTML and CSS after a month of education. Added a bit of JavaScript animations as well to spice it up. Give it a try!</p>
+            <a href = "https://github.com/shahobk" class = "btn2"><i class = "fa fa-github fa-2x"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <main class = "mobile-media">
+      <h1>Keep in touch</h1>
+      <a href ="mailto:shahob.kazemi@ryerson.ca"><i class = "fa fa-envelope-square fa-3x"></i></a></li>
+      <a href ="https://github.com/shahobk"><i class = "fa fa-github fa-3x"></i></a></li>
+      <a href ="https://www.linkedin.com/in/shahob-kazemi/"><i class = "fa fa-linkedin fa-3x"></i></a></li>
+      <a href ="https://www.instagram.com/shahobk/"><i class = "fa fa-instagram fa-3x"></i></a></li>
+
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offest: 400,
+        duration: 1000
+      });
+    </script>
+  </body>
+</html>
